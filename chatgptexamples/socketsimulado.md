@@ -62,10 +62,9 @@ String _extractLine(StringBuffer buffer) {
   String line = buffer.toString().substring(0, index);
 
   // Eliminamos esa línea del buffer
-  
-  buffer.write(buffer.toString().substring(index + 2));
   buffer.clear();
-
+  buffer.write(buffer.toString().substring(index + 2));
+  
   return line;
 }
 ```
